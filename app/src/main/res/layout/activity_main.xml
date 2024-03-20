@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?android:attr/colorPressedHighlight"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+    <!-- Compare Numbers Section -->
+    <EditText
+        android:id="@+id/num1Edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="First Number"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textAlignment="center"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/num2Edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Second Number"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textAlignment="center"
+        android:layout_below="@id/num1Edit"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/compareB"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/num2Edit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#00BCD4"
+        android:text="Compare" />
+
+</RelativeLayout>
